@@ -4,7 +4,54 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="intro-container">
+    <h1>Welcome to the Student Management System</h1>
+    <p class="subtitle">A streamlined platform for managing student records, grades, and enrollment.</p>
+    
+    <hr class="divider" />
+
+    <div class="features-section">
+        <h3>What you can do here:</h3>
+        <ul>
+            <li>📝 View and update student profiles</li>
+            <li>📊 Track academic progress and grades</li>
+            <li>🏫 Manage course schedules and classes</li>
+        </ul>
+    </div>
+
+    <div class="action-button-container">
+        <a href="/Privacy" class="btn-get-started">Get Started</a>
+    </div>
 </div>
+
+<style>
+    .intro-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 30px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    h1 { color: #2c3e50; font-size: 2.5rem; margin-bottom: 10px; }
+    .subtitle { color: #7f8c8d; font-size: 1.2rem; margin-bottom: 30px; }
+    .divider { border: 0; height: 1px; background: #e0e0e0; margin: 20px 0; }
+    .features-section { text-align: left; max-width: 400px; margin: 0 auto 30px auto; }
+    .features-section h3 { color: #34495e; }
+    .features-section ul { list-style: none; padding: 0; }
+    .features-section li { margin: 10px 0; font-size: 1.1rem; color: #555; }
+    .btn-get-started {
+        display: inline-block;
+        background-color: #0078d4;
+        color: white;
+        padding: 12px 30px;
+        font-size: 1.1rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.2s;
+    }
+    .btn-get-started:hover { background-color: #005a9e; color: white; text-decoration: none; }
+</style>
