@@ -8,7 +8,7 @@ public class PrivacyModel : PageModel
 {
     public void OnGet()
     {
-        var a = new DatabaseManager();
+        var a = new DatabaseManager("Data Source=students.db");
         var s = a.GetAllStudents();
         this.OrganisationName = s.FirstOrDefault()?.Name ?? "PAM Group";
     }
