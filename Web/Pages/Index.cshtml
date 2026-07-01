@@ -5,6 +5,17 @@
 }
 
 <div class="intro-container"> 
+    <!-- TEXT-BASED LOGO -->
+    <div class="brand-container">
+        <div class="brand-title">PRIESTLEY</div>
+        <div class="brand-subtitle">
+            <span class="diamonds">◆ ◆ ◆</span> 
+            <span class="subtitle-text">COLLEGE</span> 
+            <span class="diamonds">◆ ◆ ◆</span>
+        </div>
+        <div class="brand-location">WARRINGTON</div>
+    </div>
+
     <h1>Welcome to the Student Management System</h1>
     <p class="subtitle">A streamlined platform for managing student records, grades, and enrollment.</p>
     
@@ -25,13 +36,60 @@
 </div>
 
 <style>
+    /* LOGO STYLING */
+    .brand-container {
+        background: linear-gradient(135deg, #0f1e36 0%, #0d4b68 50%, #115975 100%); 
+    
+    padding: 15px 25px;
+    display: inline-block;
+    font-family: 'Arial Black', 'Arial Bold', sans-serif; 
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 6px;
+    margin-bottom: 25px; 
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1); /* Optional: adds a faint sleek top edge highlight */
+}
+    }
+    .brand-title {
+        font-size: 52px;
+        font-weight: 1200;
+        margin: 0;
+        line-height: 0.85;
+        letter-spacing: -1px;
+    }
+    .brand-subtitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        margin-top: 4px;
+    }
+    .subtitle-text {
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+    .diamonds {
+        color: #ffc107; 
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .brand-location {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 5px;
+        margin-top: 2px;
+        opacity: 0.8;
+    }
+
+    /* APP LAYOUT STYLING */
     .intro-container {
         max-width: 800px;
         margin: 50px auto;
         padding: 30px;
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f9f9f9;
+        background-color: #ffffff;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
@@ -42,13 +100,14 @@
     .features-section h3 { color: #34495e; }
     .features-section ul { list-style: none; padding: 0; }
     .features-section li { margin: 10px 0; font-size: 1.1rem; color: #555; }
+    
     .btn-get-started {
         display: inline-block;
         background-color: #ffc107;
-        color: ;
+        color: #2c3e50; 
         padding: 12px 30px;
         font-size: 1.1rem;
-        text-decoration: none;d9bb22
+        text-decoration: none;
         border-radius: 5px;
         font-weight: bold;
         transition: background 0.2s;
