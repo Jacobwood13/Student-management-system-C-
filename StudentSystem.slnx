@@ -1,3 +1,5 @@
 <Solution>
-  <Project Path="WebApplication1/WebApplication1.csproj" />
+  <Project Path="Web/web.csproj" />
+  <Project Path="App/Student management CS.csproj" />
+  <Project Path="Tests/StudentManagementSystem.Tests.csproj" />
 </Solution>
